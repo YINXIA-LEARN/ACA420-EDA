@@ -1,0 +1,7 @@
+AC620_OV5640V2_SDRAM_TFT800_30FPS：使用Verilog直接配置OV5640摄像头，RGB565、800*480分辨率、30FPS。图像存入SDRAM后读出并显示到800*480分辨率TFT显示屏上，由于使用Verilog直接配置OV5640摄像头，暂不支持开启补光灯和自动对焦功能
+
+AC620_OV5640V2_SDRAM_VGA800x600_30FPS：使用Verilog直接配置OV5640摄像头，RGB565、800*600分辨率、30FPS。图像存入SDRAM后读出并显示到VGA显示器上，由于使用Verilog直接配置OV5640摄像头，暂不支持开启补光灯和自动对焦功能
+
+AC620_OV5640V2_SDRAM_TFT800_AF：使用NIOS II CPU配置OV5640摄像头，RGB565、800*480分辨率、15FPS。图像存入SDRAM后读出并显示到800*480分辨率TFT显示屏上，支持开启补光灯和自动对焦功能，按下S0开启补光灯，按下S1触发一次自动对焦
+
+AC620_OV5640V2_ETH100_UDP_Camera_AF：使用NIOS II CPU配置OV5640摄像头，RGB565、640*480分辨率、15FPS。图像存入SDRAM后读出，通过百兆以太网采用UDP协议发出，上位机使用UDP_Camera软件显示图像
